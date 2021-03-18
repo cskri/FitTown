@@ -25,10 +25,10 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active"><a class="nav-link" href="Default.aspx">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="Instructors.html">Instructors</a></li>
                 <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
-                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="About.aspx">About</a></li>
             </ul>
                 <a class="btn btn-outline-primary ml-md-3" href="signup.html">Sign Up</a>
             </div>

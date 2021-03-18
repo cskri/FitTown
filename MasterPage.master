@@ -4,17 +4,72 @@
 
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head runat="server">
-    <title></title>
+    <meta charset="utf-8"/>
+    <title>FitTown | All of your fitness needs</title>
+    <meta name="viewport" content="width=device-width" initial-scale="1" shrink-to-fit="no"/>
+    <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
+    <link href="css/styles.css" rel="stylesheet" type="text/css"/>
+    
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
     <asp:ContentPlaceHolder id="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
+        <!-- Start Navbar -->
+        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+            <div class="mr-auto">
+                <a class="navbar-brand" href="index.html"><img src="images/logo.png" width="110px"></a>
+            </div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
+            <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active"><a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Instructors.html">Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="classes.html">Classes</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            </ul>
+                <a class="btn btn-outline-primary ml-md-3" href="signup.html">Sign Up</a>
+            </div>
+        </nav>
+        <!-- END Navbar -->
     <div>
         <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
         
         </asp:ContentPlaceHolder>
     </div>
+        <!-- Start page footer-->
+        <footer>
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4 col-sm-12">
+                        <h5>Opening Hours</h5>
+                        <ul class="list-unstyled">
+                            <li>Monday - Friday: 6am - 11pm</li>
+                            <li>Saturday - Sunday: 8am - 9pm</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h5>Social Media</h5>
+                        <ul class="list-unstyled">
+                            <li><a href="https://www.facebook.com/Fitnessworldaarhusvejlbyringvej/" target="_blank">Facebook</a></li>
+                            <li><a href="https://twitter.com/fitnessworlddk?lang=da" target="_blank">Twitter</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-4 col-sm-12">
+                        <h5>Contact info</h5>
+                        <ul class="list-unstyled">
+                            <li>Phone: +45 65274618</li>
+                            <li>Email: <a href="mailto:fitness@via.dk">fitness@via.dk</a></li>
+                            <li>Address: <a href="https://goo.gl/maps/KkGd2uo7QmesSGYq6" target="_blank">Ceresbyen 24, Aarhus C</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- End footer-->
     </form>
 </body>
 </html>

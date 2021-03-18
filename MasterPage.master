@@ -20,7 +20,7 @@
         <!-- Start Navbar -->
         <nav class="navbar navbar-expand-sm bg-light navbar-light">
             <div class="mr-auto">
-                <a class="navbar-brand" href="index.html"><img class="logo" src="images/cover.png" width="170px" style="border-radius:50px"/></a>
+                <a class="navbar-brand" href="Default.aspx"><img class="logo" src="images/cover.png" width="170px" style="border-radius:50px"/></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="myNavbar">

@@ -6,7 +6,7 @@
 <head runat="server">
     <meta charset="utf-8"/>
     <title>FitTown | All of your fitness needs</title>
-    <meta name="viewport" content="width=device-width" initial-scale="1" shrink-to-fit="no"/>
+    <meta name="viewport" content="width=device-width" />
     <link href="css/bootstrap.min.css" type="text/css" rel="stylesheet"/>
     <link href="css/styles.css" rel="stylesheet" type="text/css"/>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"></script>

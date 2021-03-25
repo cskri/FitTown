@@ -16,8 +16,8 @@
                   <svg class="bd-placeholder-img" width="100%" height="400px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="400px" fill="#000" fill-opacity="0.4"></rect></svg>
                 <div class="container">
                   <div class="carousel-caption text-left">
-                    <h5>Welcome to VIA FIT</h5>
-                    <p>Our goal is to maximize your perfomance and provide you with a cheap student-friendly gym membership. </p>
+                    <h5>Welcome to FitTown</h5>
+                    <p>Our goal is to maximize your perfomance and provide you with a cheap gym membership. </p>
                     <p><a class="btn btn-lg btn-primary" href="signup.aspx" role="button">Sign up today</a></p>
                   </div>
                 </div>

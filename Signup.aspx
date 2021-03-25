@@ -6,7 +6,7 @@
      <!-- On Page Title -->
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Join FitTown today</h1>
-            <p class="lead">Our favorable prices are made specially for you, the student who wants to maximize value for your money!</p>
+            <p class="lead">Our favorable prices are made specially for you! The trainer who wants to maximize value for your money!</p>
         </div>
         
         <!-- Start bootstrap card-deck -->

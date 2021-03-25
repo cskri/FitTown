@@ -9,8 +9,7 @@
         </div>
     <br />
     <div class="Container">
-        <div class="card-deck mb-3 center">
-            <div class="card mb-3 shadow-sm">
+            <div class="card mb-10 shadow-lg">
                 <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
                     <WizardSteps>
                         <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
@@ -20,7 +19,6 @@
                     </WizardSteps>
                 </asp:CreateUserWizard>
             </div>
-        </div>
     </div>
     <br />
 </asp:Content>

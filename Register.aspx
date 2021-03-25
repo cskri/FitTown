@@ -6,8 +6,8 @@
     <br />
     <div class="Container d-flex justify-content-center">
             <div class="card mb-10 shadow-lg d-flex justify-content-center">
-                <div class="card-header">
-                    <h1 class="display-4">Signup for FitTown today</h1>
+                <div class="card-header d-flex justify-content-center">
+                    <h4 class="my-0 font-weight-normal">Signup for FitTown today</h4>
                 </div>
                 <div class="card-body d-flex justify-content-center">
                 <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">

@@ -7,8 +7,8 @@
     
     <div class="Container d-flex justify-content-center">
             <div class="card mb-2 shadow-lg d-flex justify-content-center">
-                <div class="card-header">
-                    <h1 class="display-4">Sign In</h1>
+                <div class="card-header d-flex justify-content-center">
+                    <h4 class="my-0 font-weight-normal">Sign In</h4>
                 </div>
                 <div class="card-body d-flex justify-content-center">
                 <asp:Login ID="Login1" runat="server"></asp:Login>

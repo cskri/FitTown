@@ -23,7 +23,7 @@
                             <li>Unlimited usage of equipment</li>
                             <li>Email support</li>
                         </ul>
-                        <a class="btn btn-lg btn-block btn-primary" href="form.html">Get started</a>
+                        <a class="btn btn-lg btn-block btn-primary" href="Register.aspx">Get started</a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -37,7 +37,7 @@
                             <li>50% Discount on supplies</li>
                             <li>Priority email support</li>
                         </ul>
-                        <a class="btn btn-lg btn-block btn-primary" href="form.html">Get started</a>
+                        <a class="btn btn-lg btn-block btn-primary" href="Register.aspx">Get started</a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -51,7 +51,7 @@
                             <li>Bring a friend, no additional cost</li>
                             <li>Personal trainer</li>
                         </ul>
-                        <button type="button" class="btn btn-lg btn-block btn-primary" onclick="alert('See Contact Information in the footer of the page. Then contact us in order to set up your subscription.')">Get Started</button>
+                        <a class="btn btn-lg btn-block btn-primary" href="Register.aspx">Get started</a>
                     </div>
                 </div>
             </div>

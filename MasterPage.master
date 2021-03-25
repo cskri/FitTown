@@ -25,12 +25,18 @@
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item active"><a class="nav-link" href="Default.aspx">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="Default.aspx">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="Instructors.aspx">Instructors</a></li>
                 <li class="nav-item"><a class="nav-link" href="classes.aspx">Classes</a></li>
                 <li class="nav-item"><a class="nav-link" href="About.aspx">About</a></li>
             </ul>
-                <a class="btn btn-outline-primary ml-md-3" href="Signup.aspx">Sign Up</a>
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item btn btn-outline-primary ml-md-3"><a href="Signup.aspx">Sign Up</a></li>
+                <li class="nav-item btn btn-outline-primary ml-md-3"><asp:LoginStatus ID="LoginStatus1" runat="server" /></li>
+            </ul>
+                
+                
+                
             </div>
         </nav>
         <!-- END Navbar -->

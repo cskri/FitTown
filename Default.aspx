@@ -18,7 +18,7 @@
                   <div class="carousel-caption text-left">
                     <h5>Welcome to VIA FIT</h5>
                     <p>Our goal is to maximize your perfomance and provide you with a cheap student-friendly gym membership. </p>
-                    <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="signup.aspx" role="button">Sign up today</a></p>
                   </div>
                 </div>
               </div>
@@ -28,7 +28,7 @@
                   <div class="carousel-caption">
                     <h5>Get in shape</h5>
                     <p>All of our equiptment is of the highest quality and our instructors will do their upmost in order to help you get in shape.</p>
-                    <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="signup.aspx" role="button">Sign up today</a></p>
                   </div>
                 </div>
               </div>
@@ -38,7 +38,7 @@
                   <div class="carousel-caption text-right">
                     <h5>Various memberships</h5>
                     <p>We have three different memberships to match your exact needs, if you want to train alone, with extra benefits or with a personal trainer of the highest caliber and enthusiasm.</p>
-                    <p><a class="btn btn-lg btn-primary" href="signup.html" role="button">Sign up today</a></p>
+                    <p><a class="btn btn-lg btn-primary" href="signup.aspx" role="button">Sign up today</a></p>
                   </div>
                 </div>
               </div>

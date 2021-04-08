@@ -3,6 +3,15 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
+    <div class="card" style="background: url(../images/RegisterWorkout.jpg) no-repeat center;background-size:cover">
+       <svg class="bd-placeholder-img" width="100%" height="400px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="400px" fill="#000" fill-opacity="0.4"></rect></svg>
+       <div class="container">
+          <div class="carousel-caption text-left">
+             <h5>No crazy signup forms!</h5>
+             <p>Just choose your membership and create your account!</p>
+           </div>
+       </div>
+    </div>
      <!-- On Page Title -->
         <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
             <h1 class="display-4">Join FitTown today</h1>

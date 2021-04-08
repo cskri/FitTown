@@ -18,34 +18,34 @@
 <body>
     <form id="form1" runat="server">
         <!-- Start Navbar -->
-        <nav class="navbar navbar-expand-sm bg-light navbar-light">
+        <nav class="navbar navbar-expand-lg bg-light navbar-light">
             <div class="mr-auto">
-                <a class="navbar-brand" href="Default.aspx"><img class="logo" src="images/cover.png" width="170px" style="border-radius:50px"/></a>
+                <a class="navbar-brand" href="Default.aspx"><img class="logo" src="../images/cover.png" width="170px" style="border-radius:50px"/></a>
             </div>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#myNavbar"><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse" id="myNavbar">
             <ul class="navbar-nav ml-auto">
-                <li class="nav-item"><a class="nav-link" href="Default.aspx">Home</a></li>
-                <li class="nav-item"><a class="nav-link" href="Instructors.aspx">Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Default.aspx">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="../Instructors.aspx">Instructors</a></li>
                 <asp:LoginView ID="LoginView2" runat="server">
                     <AnonymousTemplate>
-                        <li class="nav-item"><a class="nav-link" href="classes.aspx">Classes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../classes.aspx">Classes</a></li>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <li class="nav-item"><a class="nav-link" href="BookClasses.aspx">Book Classes</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../User/BookClasses.aspx">Book Classes</a></li>
                     </LoggedInTemplate>
                 </asp:LoginView>
-                <li class="nav-item"><a class="nav-link" href="About.aspx">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="../About.aspx">About</a></li>
             </ul>
             <ul class="navbar-nav ml-auto">
                 <asp:LoginView ID="LoginView1" runat="server">
                     <AnonymousTemplate>
-                        <li class="nav-item btn"><a href="Signup.aspx">Welcome Guest </a></li>
-                        <li class="nav-item btn btn-outline-primary ml-md-3"><asp:LoginStatus ID="LoginStatus1" runat="server" logoutpageurl="~/Default.aspx" LogoutAction="Redirect"/></li>
+                        <li class="nav-item btn"><a href="../Signup.aspx">Welcome Guest </a></li>
+                        <li class="nav-item btn btn-outline-primary ml-md-3"><asp:LoginStatus ID="LoginStatus1" runat="server"/></li>
                     </AnonymousTemplate>
                     <LoggedInTemplate>
-                        <li class="nav-item btn"><a href="Profile.aspx"> Welcome<nbrsp/> <asp:LoginName ID="LoginName1" runat="server" /></a> </li>
-                        <li class="nav-item btn btn-outline-primary ml-md-3"><asp:LoginStatus ID="LoginStatus1" runat="server" logoutpageurl="~/Default.aspx" LogoutAction="Redirect"/></li>
+                        <li class="nav-item btn"><a href="../User/Account.aspx"> Welcome<nbrsp/> <asp:LoginName ID="LoginName1" runat="server" /></a> </li>
+                        <li class="nav-item btn btn-outline-primary ml-md-3"><asp:LoginStatus ID="LoginStatus2" runat="server" logoutpageurl="~/Default.aspx" LogoutAction="Redirect"/></li>
                     </LoggedInTemplate> 
                 </asp:LoginView>
             </ul>

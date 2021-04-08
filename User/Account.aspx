@@ -21,10 +21,15 @@
                     <h4 class="my-0 font-weight-normal">Your Account</h4>
                 </div>
                 <div class="card-body d-flex justify-content-center">
-                
+                    <ul class="list-unstyled mt-1 mb-1">
+                            <li><b>Username:</b> <asp:LoginName ID="LoginName3" runat="server" /></li>
+                            <li><b>Membership type:</b> <asp:Label id="Msg" ForeColor="maroon" runat="server" /> </li>
+                            <li><b>Membership price:</b> <asp:Label id="Price" ForeColor="maroon" runat="server" /> </li>
+                            <li><b>Change Membership:</b> </li>
+                        </ul>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
-                <asp:PasswordRecovery ID="PasswordRecovery1" runat="server"></asp:PasswordRecovery>
+                    <asp:ChangePassword ID="ChangePassword1" runat="server"></asp:ChangePassword>
                 </div>
             </div>
     </div>

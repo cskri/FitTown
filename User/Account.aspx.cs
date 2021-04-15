@@ -44,6 +44,14 @@ public partial class Account : System.Web.UI.Page
             {
                 Price.Text = "No monthly price for admin account";
             }
+            // Reference the RoleList CheckBoxList 
+            DropDownList RoleList = new DropDownList();
+
+            // Bind the set of roles to RoleList 
+            RoleList.Items.Add(new ListItem("Basic 99kr/month", "Basic"));
+            RoleList.Items.Add(new ListItem("Plus 199kr/month", "Plus"));
+            RoleList.Items.Add(new ListItem("Prime 499kr/month", "Prime"));
+            RoleList.DataBind();
             
         }
     }

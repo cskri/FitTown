@@ -25,7 +25,8 @@
                             <li><b>Username:</b> <asp:LoginName ID="LoginName3" runat="server" /></li>
                             <li><b>Membership type:</b> <asp:Label id="Msg" ForeColor="maroon" runat="server" /> </li>
                             <li><b>Membership price:</b> <asp:Label id="Price" ForeColor="maroon" runat="server" /> </li>
-                            <li><b>Change Membership:</b> </li>
+                            <li><b>Change Membership:</b> <asp:DropDownList ID="RoleList" runat="server" AutoPostBack="True">
+                                </asp:DropDownList></li>
                         </ul>
                 </div>
                 <div class="card-footer d-flex justify-content-center">

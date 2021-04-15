@@ -19,10 +19,15 @@
                     <h4 class="my-0 font-weight-normal">Signup for FitTown today</h4>
                 </div>
                 <div class="card-body d-flex justify-content-center">
-                <asp:CreateUserWizard ID="CreateUserWizard1" runat="server">
+                <asp:CreateUserWizard ID="RegisterUserWithRoles" runat="server" onactivestepchanged="RegisterUserWithRoles_ActiveStepChanged" ContinueDestinationPageUrl="/User/Account.aspx">
                     <WizardSteps>
                         <asp:CreateUserWizardStep ID="CreateUserWizardStep1" runat="server">
                         </asp:CreateUserWizardStep>
+                        <asp:WizardStep ID="SpecifyRolesStep" runat="server" AllowReturn="False" StepType="Step" Title="Specify Roles">
+                                <h3>Choose your membership</h3>
+                                <asp:DropDownList ID="RoleList" runat="server" AutoPostBack="True">
+                                </asp:DropDownList>
+                        </asp:WizardStep>
                         <asp:CompleteWizardStep ID="CompleteWizardStep1" runat="server">
                         </asp:CompleteWizardStep>
                     </WizardSteps>

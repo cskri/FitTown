@@ -27,6 +27,10 @@
                             <li><b>Membership price:</b> <asp:Label id="Price" ForeColor="maroon" runat="server" /> </li>
                             <li><b>Change Membership:</b> <asp:DropDownList ID="RoleList" runat="server" AutoPostBack="True">
                                 </asp:DropDownList></li>
+                            <li><br /></li>
+                            <li><asp:Button ID="ConfirmButton" runat="server" Text="Confirm Change" OnClick="ConfirmButton_Click" /></li>
+                            <li><asp:Label ID="ConfirmLabel" runat="server" Text=""></asp:Label></li>
+                        
                         </ul>
                 </div>
                 <div class="card-footer d-flex justify-content-center">

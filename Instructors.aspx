@@ -14,45 +14,51 @@
     </div>
 
     <h2 style="text-align:center">Our Team</h2>
-<div class="row">
-  <div class="column">
-    <div class="card">
-      <img src="/images/instructor2.jpg" alt="Jane" style="width:100%">
-      <div class="container">
-        <h2>Jane Doe</h2>
-        <p class="title">CEO & Founder</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>jane@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
 
-  <div class="column">
-    <div class="card">
-      <img src="/images/Instructor1.jpg" alt="Mike" style="width:100%">
-      <div class="container">
-        <h2>Mike Ross</h2>
-        <p class="title">Art Director</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>mike@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-
-  <div class="column">
-    <div class="card">
-      <img src="/images/instructor3.jpg" alt="John" style="width:100%">
-      <div class="container">
-        <h2>John Doe</h2>
-        <p class="title">Designer</p>
-        <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-        <p>john@example.com</p>
-        <p><button class="button">Contact</button></p>
-      </div>
-    </div>
-  </div>
-</div>
+    <div class="container">
+            <div class="card-deck mb-3 text-center">
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <img src="/images/instructor2.jpg" alt="Jane" style="width:100%"/>
+                    </div>
+                    <div class="card-body">
+                            <h2>Jane Doe</h2>
+                            <p class="title">Instructor</p>
+                            <p>My passion in life has allways been fitness. Ever since i was 15 i have been going to the gym, over the years i became really friendly 
+                                with my gym community and ever since that experiance i have always wanted to become an instructor. <br />
+                                I mainly instruct spinning as you can see on the photo.</p>
+                            <p>jane@example.com</p>
+                            <a href="mailto:jane@example.com" class="button">Contact</a>
+                        
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                        <img src="/images/Instructor1.jpg" alt="Mike" style="width:100%"/>
+                    </div>
+                    <div class="card-body">
+                            <h2>Mike Ross</h2>
+                            <p class="title">Instructor</p>
+                            <p>I like to lift heavy, i am fit and all the birds love it. look at my big arms</p>
+                            <p>mike@example.com</p>
+                            <a href="mailto:Mike@example.com" class="button">Contact</a>
+                        
+                    </div>
+                </div>
+                <div class="card mb-4 shadow-sm">
+                    <div class="card-header">
+                         <img src="/images/instructor3.jpg" alt="John" style="width:100%"/>
+                    </div>
+                    <div class="card-body">
+                            <h2>Anne Doe</h2>
+                            <p class="title">Personal trainer</p>
+                            <p>My big love in life is Mike he is so careing, strong and sexy.</p>
+                            <p>Anne@example.com</p>
+                            <a href="mailto:Anne@example.com" class="button">Contact</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
 </asp:Content>
 

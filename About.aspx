@@ -21,7 +21,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                   <div class="d-flex justify-content-center">
-                <img src="https://cdn.pixabay.com/photo/2013/07/12/18/03/black-152877_1280.png" class="aboutus"/>
+                <img class="aboutus" src="/images/Heart1.jpg"/>
                       </div>
                 <div class="card-body">
                     <div class="h4 d-flex justify-content-center">Get Healthy</div>
@@ -35,7 +35,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                 <div class="d-flex justify-content-center">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicW7_NWRtQ2J7ncb_J8ulA1wAHcXKZOGqKg&usqp=CAU" class="aboutus"/>
+                    <img src="/images/Weights2.png" class="aboutus"/>
                       </div>               
                    <div class="card-body">
                        <div class="h4 d-flex justify-content-center">Work Out</div>
@@ -50,7 +50,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                   <div class="d-flex justify-content-center">
-                    <img src="https://seeklogo.com/images/D/dollar-logo-F5403A8DB9-seeklogo.com.png" class="aboutus"/>
+                    <img src="/images/Dollar3.png" class="aboutus">
                       </div>                
                   <div class="card-body">
                       <div class="h4 d-flex justify-content-center">Cheap Membership</div>
@@ -65,7 +65,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                     <div class="d-flex justify-content-center">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOQuwysauc18HTj3VluI2ZUsBvsl0Nr_ARA&usqp=CAU" class="aboutus"/>
+                     <img class="aboutus" src="/images/Man4.png" alt="Heart"/>
                       </div>               
                    <div class="card-body">
                        <div class="h4 d-flex justify-content-center">Increase Body Function</div>
@@ -79,7 +79,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                     <div class="d-flex justify-content-center">
-                    <img src="https://img.pngio.com/heartbeat-ekg-ecg-free-vector-graphic-on-pixabay-heart-rate-monitor-png-960_480.png" class="aboutus"/>
+                    <img src="/images/Sinus5.png" class="aboutus"/>
                       </div>                   
                   <div class="card-body">
                       <div class="h4 d-flex justify-content-center">Stay Alive</div>
@@ -93,7 +93,7 @@
             <div class="col-md-4">
               <div class="card mb-4 box-shadow">
                    <div class="d-flex justify-content-center">
-                    <img src="https://static.vecteezy.com/system/resources/thumbnails/000/377/730/small/24h-1.jpg" class="aboutus"/>
+                    <img src="/images/Hours6.png" class="aboutus"/>
                       </div>               
                   <div class="card-body">
                       <div class="h4 d-flex justify-content-center">yeeha</div>

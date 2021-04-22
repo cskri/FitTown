@@ -41,13 +41,13 @@
                         <li><b>Class Name:</b>
                             <asp:TextBox ID="ClassName" runat="server"></asp:TextBox>
                         </li>
-                        <li><b>Room:</b>
-                            <asp:TextBox ID="ClassRoom" runat="server"></asp:TextBox>
-                        </li>
                         <li><b>Date & Time:</b>
                            <asp:TextBox ID="TextBox1" runat="server" ReadOnly = "true"></asp:TextBox>
                             <img src="calender.png" />
                             <asp:Button ID="btnSave" runat="server" Text="Save" onclick="btnSave_Click" />
+                        </li>
+                        <li><b>Room:</b>
+                            <asp:DropDownList ID="Rooms" runat="server"></asp:DropDownList>
                         </li>
                         <li><b>Maximum Participants:</b>
                            <asp:TextBox ID="MaxParticipants" runat="server"></asp:TextBox>

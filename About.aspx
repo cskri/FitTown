@@ -1,15 +1,6 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="About.aspx.cs" Inherits="About" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
-         <!-- Latest compiled and minified CSS -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
-
-<!-- Optional theme -->
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap-theme.min.css" integrity="sha384-6pzBo3FDv/PJ8r2KRkGHifhEocL+1X2rVCTTkUfGk7/0pbek5mMa1upzvWbrUbOZ" crossorigin="anonymous">
-
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
-    
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
    
@@ -23,48 +14,98 @@
        </div>
     </div>
 
-    <div class="aboutus">
-  <div class="container-fluid text-center">
-  <h2>SERVICES</h2>
-  <h4>What we offer</h4>
-  <br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-heart"></span>
-      <h4>Well Being</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-usd"></span>
-      <h4>Cheap Membership</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-refresh"></span>
-      <h4>Around the clock fitness</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    </div>
-    <br><br>
-  <div class="row">
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-scale"></span>
-      <h4>Weight loss programs</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-plus"></span>
-      <h4>Improved health</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-    <div class="col-sm-4">
-      <span class="glyphicon glyphicon-user"></span>
-      <h4>Countless Instructors!</h4>
-      <p>Lorem ipsum dolor sit amet..</p>
-    </div>
-  </div>
-</div>
-        </div>
+     <div class="album py-5 bg-light">
+        <div class="container">
 
+          <div class="row">
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                  <div class="d-flex justify-content-center">
+                <a href="Health" title=""><img src="https://cdn.pixabay.com/photo/2013/07/12/18/03/black-152877_1280.png" class="aboutus"/></a>
+                      </div>
+                <div class="card-body">
+                    <div class="h4 d-flex justify-content-center">Get Healthy</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+     
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                <div class="d-flex justify-content-center">
+                    <a href="Health" title=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTicW7_NWRtQ2J7ncb_J8ulA1wAHcXKZOGqKg&usqp=CAU" class="aboutus"/></a>
+                      </div>               
+                   <div class="card-body">
+                       <div class="h4 d-flex justify-content-center">Work Out</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+      
+                </div>
+              </div>
+            </div>
+                </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                  <div class="d-flex justify-content-center">
+                    <a href="Health" title=""><img src="https://seeklogo.com/images/D/dollar-logo-F5403A8DB9-seeklogo.com.png" class="aboutus"/></a>
+                      </div>                
+                  <div class="card-body">
+                      <div class="h4 d-flex justify-content-center">Cheap Membership</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                </div>
+              </div>
+            </div>
+                </div>
+
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                    <div class="d-flex justify-content-center">
+                    <a href="Health" title=""><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuOQuwysauc18HTj3VluI2ZUsBvsl0Nr_ARA&usqp=CAU" class="aboutus"/></a>
+                      </div>               
+                   <div class="card-body">
+                       <div class="h4 d-flex justify-content-center">Increase Body Function</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                    <div class="d-flex justify-content-center">
+                    <a href="Health" title=""><img src="https://img.pngio.com/heartbeat-ekg-ecg-free-vector-graphic-on-pixabay-heart-rate-monitor-png-960_480.png" class="aboutus"/></a>
+                      </div>                   
+                  <div class="card-body">
+                      <div class="h4 d-flex justify-content-center">Stay Alive</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                    
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="card mb-4 box-shadow">
+                   <div class="d-flex justify-content-center">
+                    <a href="Health" title=""><img src="https://static.vecteezy.com/system/resources/thumbnails/000/377/730/small/24h-1.jpg" class="aboutus"/></a>
+                      </div>               
+                  <div class="card-body">
+                      <div class="h4 d-flex justify-content-center">Open 24 hours a day</div>
+                  <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                  <div class="d-flex justify-content-between align-items-center">
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+     </div>       
 </asp:Content>
 

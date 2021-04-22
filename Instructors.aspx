@@ -22,7 +22,7 @@
                         <img src="/images/instructor2.jpg" alt="Jane" style="width:100%"/>
                     </div>
                     <div class="card-body">
-                            <h2>Jane Doe</h2>
+                            <h2>Jane Henricks</h2>
                             <p class="title">Instructor</p>
                             <p>My passion in life has allways been fitness. Ever since i was 15 i have been going to the gym, over the years i became really friendly 
                                 with my gym community and ever since that experiance i have always wanted to become an instructor. <br />
@@ -47,10 +47,10 @@
                 </div>
                 <div class="card mb-4 shadow-sm">
                     <div class="card-header">
-                         <img src="/images/instructor3.jpg" alt="John" style="width:100%"/>
+                         <img src="/images/instructor3.jpg" alt="Anne" style="width:100%"/>
                     </div>
                     <div class="card-body">
-                            <h2>Anne Doe</h2>
+                            <h2>Anne Poulsen</h2>
                             <p class="title">Personal trainer</p>
                             <p>My big love in life is Mike he is so careing, strong and sexy.</p>
                             <p>Anne@example.com</p>

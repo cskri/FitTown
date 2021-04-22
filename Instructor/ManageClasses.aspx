@@ -1,6 +1,24 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ManageClasses.aspx.cs" Inherits="Instructor_ManageClasses" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+<script src="/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
+<script src="/Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
+<script src="/Scripts/calendar-en.min.js" type="text/javascript"></script>
+<link href="/Styles/calendar-blue.css" rel="stylesheet" type="text/css" />
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $("#<%=TextBox1.ClientID %>").dynDateTime({
+            showsTime: true,
+            ifFormat: "%Y/%m/%d %H:%M",
+            daFormat: "%l;%M %p, %e %m, %Y",
+            align: "BR",
+            electric: false,
+            singleClick: false,
+            displayArea: ".siblings('.dtcDisplayArea')",
+            button: ".next()"
+        });
+    });
+</script>
 </asp:Content>
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <div class="card" style="background: url(/images/ClassesWorkout.jpg) no-repeat center;background-size:cover">
@@ -27,7 +45,9 @@
                             <asp:TextBox ID="ClassRoom" runat="server"></asp:TextBox>
                         </li>
                         <li><b>Date & Time:</b>
-                           <asp:TextBox ID="DateTime" runat="server"></asp:TextBox>
+                           <asp:TextBox ID="TextBox1" runat="server" ReadOnly = "true"></asp:TextBox>
+                            <img src="calender.png" />
+                            <asp:Button ID="btnSave" runat="server" Text="Save" onclick="btnSave_Click" />
                         </li>
                         <li><b>Maximum Participants:</b>
                            <asp:TextBox ID="MaxParticipants" runat="server"></asp:TextBox>

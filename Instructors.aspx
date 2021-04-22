@@ -28,8 +28,11 @@
                                 with my gym community and ever since that experiance i have always wanted to become an instructor. <br />
                                 I mainly instruct spinning as you can see on the photo.</p>
                             <p>jane@example.com</p>
-                            <a href="mailto:jane@example.com" class="button">Contact</a>
+                            
                         
+                    </div>
+                    <div class="card-footer">
+                            <a href="mailto:jane@example.com" class="button">Contact</a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -41,8 +44,11 @@
                             <p class="title">Instructor</p>
                             <p>I like to lift heavy, i am fit and all the birds love it. look at my big arms</p>
                             <p>mike@example.com</p>
-                            <a href="mailto:Mike@example.com" class="button">Contact</a>
+                            
                         
+                    </div>
+                    <div class="card-footer">
+                            <a href="mailto:Mike@example.com" class="button">Contact</a>
                     </div>
                 </div>
                 <div class="card mb-4 shadow-sm">
@@ -54,8 +60,11 @@
                             <p class="title">Personal trainer</p>
                             <p>My big love in life is Mike he is so careing, strong and sexy.</p>
                             <p>Anne@example.com</p>
-                            <a href="mailto:Anne@example.com" class="button">Contact</a>
+                            
                         
+                    </div>
+                    <div class="card-footer">
+                            <a href="mailto:Anne@example.com" class="button">Contact</a>
                     </div>
                 </div>
             </div>

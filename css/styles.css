@@ -92,15 +92,14 @@ footer{
 .aboutus {
     max-height: 80px;
     max-width: 100%;
-    padding: 45px;
-    
+    padding: 5px;  
 }
 
 .wrapper {
     width: 841px;
     margin: 20px auto;
     margin-bottom: 50px;
-    margin-top: 10px;
+    margin-top: 30px;
     overflow: hidden; /* will contain if #first is longer than #second */
 }
 .first {
@@ -124,12 +123,12 @@ footer{
 }
 
 .pumpertext {
-    margin-top: 50px;
+    margin-top: 40px;
     overflow: hidden;
 
 }
 .pumper {
     float: left;
-    margin-top: 100px;
+    margin-top: 90px;
     margin-right: 50px;
 }

@@ -6,7 +6,8 @@
 <asp:Content ID="Content2" ContentPlaceHolderID="ContentPlaceHolder1" Runat="Server">
     <!-- Start Carousel 
         -- Thoughout our webpage i've been putting images for Carousel, Jumbotron, Featurettes etc. as Background images to the element, as well as using SVGs as placeholders for the image. The images will thereby be responsive and follow the page. (IT LOOKS REALLY GOOD!) -->
-        <div id="myCarousel1" class="carousel slide mb-5" data-ride="carousel">
+    <div class="card">   
+    <div id="myCarousel1" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
               <li data-target="#myCarousel1" data-slide-to="0" class="active"></li>
               <li data-target="#myCarousel1" data-slide-to="1" class=""></li>
@@ -53,6 +54,7 @@
               <span class="sr-only">Next</span>
             </a>
         </div>
+        </div> 
         <!-- END Carousel-->
     
     <div class="wrapper" >

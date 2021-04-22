@@ -42,7 +42,8 @@
                     <div class="card-body">
                             <h2>Mike Ross</h2>
                             <p class="title">Instructor</p>
-                            <p>I like to lift heavy, i am fit and all the birds love it. look at my big arms</p>
+                            <p>If you need anything within powerlifting i am your guy. My main focus is heavy lifting for semi 
+                                professional athlete, i will help you reach your goals and dreams. if you have any questions please contact me.</p>
                             <p>mike@example.com</p>
                             
                         
@@ -58,7 +59,9 @@
                     <div class="card-body">
                             <h2>Anne Poulsen</h2>
                             <p class="title">Personal trainer</p>
-                            <p>My big love in life is Mike he is so careing, strong and sexy.</p>
+                            <p>Traning has always been a great passion for me, and now i have the chance to share my passion with 
+                                everyone. If you are looking for a dedicated personal trainer please contact me.
+                            </p>
                             <p>Anne@example.com</p>
                             
                         

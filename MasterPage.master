@@ -35,6 +35,15 @@
                     <LoggedInTemplate>
                         <li class="nav-item"><a class="nav-link" href="/User/BookClasses.aspx">Book Classes</a></li>
                     </LoggedInTemplate>
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="admin, Instructor">
+                            <ContentTemplate>
+                                <li class="nav-item"><a class="nav-link" href="/classes.aspx">Classes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/User/BookClasses.aspx">Book Classes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/Instructor/ManageClasses.aspx">Manage Classes</a></li>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
                 </asp:LoginView>
                 <li class="nav-item"><a class="nav-link" href="/About.aspx">About</a></li>
             </ul>

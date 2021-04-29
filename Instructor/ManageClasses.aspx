@@ -44,13 +44,18 @@
                         <li><b>Date & Time:</b>
                            <asp:TextBox ID="TextBox1" runat="server" ReadOnly = "true"></asp:TextBox>
                             <img src="calender.png" />
-                            <asp:Button ID="btnSave" runat="server" Text="Save" onclick="btnSave_Click" />
+                            
                         </li>
                         <li><b>Room:</b>
-                            <asp:DropDownList ID="Rooms" runat="server"></asp:DropDownList>
-                        </li>
-                        <li><b>Maximum Participants:</b>
-                           <asp:TextBox ID="MaxParticipants" runat="server"></asp:TextBox>
+                            <asp:DropDownList ID="roomDropDownList" runat="server" Width="120px"
+                                DataSourceID="SqlDataSource1" DataTextField="Name" DataValueField="Name">
+                            </asp:DropDownList>
+
+                            <!-- SQL statement that retrieves all rooms from the database -->
+                            <asp:SqlDataSource ID="SqlDataSource1" runat="server"
+                                ConnectionString="<%$ ConnectionStrings:LocalSqlServer %>"
+                                SelectCommand="SELECT [Name] FROM [Rooms]">
+                            </asp:SqlDataSource>
                         </li>
                         <li>
                             <br />
@@ -59,7 +64,7 @@
                             <asp:Button ID="ConfirmButton" runat="server" Text="Confirm Class" OnClick="ConfirmButton_Click" />
                         </li>
                         <li>
-                            <asp:Label ID="ConfirmLabel" runat="server" Text=""></asp:Label>
+                            <asp:Label ID="resultLabel" runat="server" Text=""></asp:Label>
                         </li>
 
                     </ul>

@@ -30,7 +30,6 @@
                             <li><br /></li>
                             <li><asp:Button ID="ConfirmButton" runat="server" Text="Confirm Change" OnClick="ConfirmButton_Click" /></li>
                             <li><asp:Label ID="ConfirmLabel" runat="server" Text=""></asp:Label></li>
-                        
                         </ul>
                 </div>
                 <div class="card-footer d-flex justify-content-center">

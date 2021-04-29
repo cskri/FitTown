@@ -95,40 +95,11 @@ footer{
     padding: 5px;  
 }
 
+
 .wrapper {
-    width: 841px;
-    margin: 20px auto;
-    margin-bottom: 50px;
-    margin-top: 30px;
-    overflow: hidden; /* will contain if #first is longer than #second */
-}
-.first {
-    width: 500px;
-    float:left; /* add this */
-
-}
-.second {
-    float: left;
-    margin-top:75px;
-    margin-left: 50px;
-    overflow: hidden; /* if you don't want #second to wrap below #first */
-}
-#altforflotte {
-    height:300px;
-    width: 250px;
-}
-#pumper {
-    height:250px;
-    width: 300px;
+margin:60px;
 }
 
-.pumpertext {
-    margin-top: 40px;
-    overflow: hidden;
 
-}
-.pumper {
-    float: left;
-    margin-top: 90px;
-    margin-right: 50px;
-}
+
+

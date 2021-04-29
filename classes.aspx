@@ -11,6 +11,95 @@
              <p>Signing up for some of our many classes will help you get motivated and live your dream!</p>
            </div>
        </div>
+        </div>
+    <div class="col"id="ClassesID">
+        <div class="wrapper" >
+  <div class="row justify-content-md-center">
+      <div class="col col-md-4">
+    <div class="first">
+      <h1>Crossfit</h1>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
+          </div>
+          <div class="col col-md-4">
+
+    <div class="second">
+      <img id="classesimg1" src="/images/Crossfit.jpg" />
+    </div>
+          </div>
+          
+ </div>
+
+    <div class="wrapper">
+        <div class="row justify-content-md-center">
+            <div class="col col-md-4">
+  
+    <div class="pumper">
+     <img id="classesimg2" src="/images/Spinning2.jpg" />
+    </div>
+                </div>
+            <div class="col col-md-4">
+
+    <div class="pumpertext">
+      <h1>Spinning</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+                </div>
+     
+</div>
+        </div>
+
+     <div class="wrapper">
+  <div class="row justify-content-md-center">
+      <div class="col col-md-4">
+    <div class="first">
+      <h1>Spinning</h1>
+      <h5>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+          </div>
+        <div class="col col-md-4">
+    <div class="second">
+      <img id="classesimg1" src="/images/Strength.jpg" />
+    </div>
+ </div>
+          </div>
+</div>
+
+    <div class="wrapper">
+  <div class="row justify-content-md-center">
+      <div class="col col-md-4">
+    <div class="Yoga">
+     <img id="classesimg2" src="/images/Yoga.jpg" />
+    </div>
+          </div>
+      <div class="col col-md-4">
+    <div class="pumpertext">
+      <h1>Lorem Ipsum</h1>
+      <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>
+
+      <p class="w3-text-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint
+        occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
+        laboris nisi ut aliquip ex ea commodo consequat.</p>
+    </div>
+          </div>
+      </div>
+     
+</div>
+            </div>
+        </div>
+
+    
 </asp:Content>
 

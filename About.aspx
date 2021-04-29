@@ -96,7 +96,7 @@
                     <img src="/images/Hours6.png" class="aboutus"/>
                       </div>               
                   <div class="card-body">
-                      <div class="h4 d-flex justify-content-center">yeeha</div>
+                      <div class="h4 d-flex justify-content-center">Open every day!</div>
                   <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                   <div class="d-flex justify-content-between align-items-center">
                    

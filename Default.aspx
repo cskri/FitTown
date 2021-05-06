@@ -56,6 +56,7 @@
         </div>
         </div> 
         <!-- END Carousel-->
+    <div class="containerFrontpage">
     <div class="container" >
         <div class="row justify-content-md-center">
             <div class="service col-sm-6 col-md-5">
@@ -74,7 +75,8 @@
         </div>
             </div>
 </div>
-        </div>
+    </div>
+        
 
     <div class="container">
         <div class="row justify-content-md-center"> 

@@ -24,8 +24,8 @@
                     <ul class="list-unstyled mt-1 mb-1">
                             <li><b>Username:</b> <asp:LoginName ID="LoginName3" runat="server" /></li>
                             <li><b>Membership type:</b> <asp:Label id="Msg" ForeColor="maroon" runat="server" /> </li>
-                            <li><b>Membership price:</b> <asp:Label id="Price" ForeColor="maroon" runat="server" /> </li>
-                            <li><b>Change Membership:</b> <asp:DropDownList ID="RoleList" runat="server" AutoPostBack="True">
+                            <li><b><asp:Label id="PriceLabel" runat="server" Text="Membership Price: " /></b> <asp:Label id="Price" ForeColor="maroon" runat="server" /> </li>
+                            <li><b><asp:Label id="MembershipLabel" runat="server" Text="Change Membership: "/></b> <asp:DropDownList ID="RoleList" runat="server" AutoPostBack="True">
                                 </asp:DropDownList></li>
                             <li><br /></li>
                             <li><asp:Button ID="ConfirmButton" runat="server" Text="Confirm Change" OnClick="ConfirmButton_Click" /></li>

@@ -49,6 +49,21 @@ public partial class Account : System.Web.UI.Page
             {
                 Price.Text = "No monthly price for admin account";
                 currentRole = "admin";
+                RoleList.Visible = false;
+                PriceLabel.Visible = false;
+                Price.Visible = false;
+                MembershipLabel.Visible = false;
+                ConfirmButton.Visible = false;
+            }
+            else if (rolesArray.Contains("Instructor"))
+            {
+                Price.Text = "No monthly price for Instructor account";
+                currentRole = "Instructor";
+                RoleList.Visible = false;
+                PriceLabel.Visible = false;
+                Price.Visible = false;
+                MembershipLabel.Visible = false;
+                ConfirmButton.Visible = false;
             }
             
             // Bind the set of roles to RoleList 
@@ -87,7 +102,7 @@ public partial class Account : System.Web.UI.Page
         }
 
         String newRole = RoleList.SelectedValue;
-        if (!currentRole.Equals(newRole) && !currentRole.Equals("admin"))
+        if (!currentRole.Equals(newRole) && !currentRole.Equals("admin") && !currentRole.Equals("Instructor"))
         {
             Roles.AddUserToRole(User.Identity.Name, newRole);
             Roles.RemoveUserFromRole(User.Identity.Name, currentRole);

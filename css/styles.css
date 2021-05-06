@@ -100,10 +100,4 @@ footer{
 margin:60px;
 }
 
-@media (min-width: 768px) {
-    .row {
-        display:block;
-    }
-}
-
 

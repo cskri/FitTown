@@ -15,6 +15,14 @@ public partial class Instructor_ManageClasses : System.Web.UI.Page
 {
     public void Page_Load()
     {
+        Label1.Text = this.User.Identity.Name;
+        if (!this.IsPostBack)
+        {
+            this.BindGrid();
+        }
+    }
+    protected void DeleteButton_Click(Object sender, EventArgs e)
+    {
 
     }
      protected void ConfirmButton_Click(object sender, EventArgs e)
@@ -26,11 +34,11 @@ public partial class Instructor_ManageClasses : System.Web.UI.Page
 
         con.Open();
 
-         string sqlStr = "SELECT COUNT(*) FROM Classes ";
+         string sqlStr = "SELECT MAX([Id]) FROM Classes ";
 
         SqlCommand sqlCmd = new SqlCommand(sqlStr, con);
  
-        Int32 result = (Int32) sqlCmd.ExecuteScalar();
+        Int32 result = (Int32) sqlCmd.ExecuteScalar() +1;
        
          string sqlStr3 = "SELECT Capacity FROM Rooms WHERE (Name = '" + roomDropDownList.Text + "')";
            SqlCommand sqlCmd3 = new SqlCommand(sqlStr3, con);
@@ -55,5 +63,54 @@ public partial class Instructor_ManageClasses : System.Web.UI.Page
             resultLabel.ForeColor = System.Drawing.Color.Black;
             resultLabel.Text = "Class Created";
         }
+     protected void OnPaging(object sender, GridViewPageEventArgs e)
+     {
+         GridView1.PageIndex = e.NewPageIndex;
+         this.BindGrid();
+     }
+     private void BindGrid()
+     {
+         string constr = ConfigurationManager.ConnectionStrings["LocalSqlServer"].ConnectionString;
+         if(this.User.IsInRole("admin"))
+         {
+             using (SqlConnection con = new SqlConnection(constr))
+             {
+                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM Classes"))
+                 {
+                     using (SqlDataAdapter sda = new SqlDataAdapter())
+                     {
+                         cmd.Connection = con;
+                         sda.SelectCommand = cmd;
+                         using (DataTable dt = new DataTable())
+                         {
+                             sda.Fill(dt);
+                             GridView1.DataSource = dt;
+                             GridView1.DataBind();
+                         }
+                     }
+                 }
+             }
+         }
+         else
+         {
+             using (SqlConnection con = new SqlConnection(constr))
+             {
+                 using (SqlCommand cmd = new SqlCommand("SELECT * FROM Classes WHERE Instructor = '" + this.User.Identity.Name +"'"))
+                 {
+                     using (SqlDataAdapter sda = new SqlDataAdapter())
+                     {
+                         cmd.Connection = con;
+                         sda.SelectCommand = cmd;
+                         using (DataTable dt = new DataTable())
+                         {
+                             sda.Fill(dt);
+                             GridView1.DataSource = dt;
+                             GridView1.DataBind();
+                         }
+                     }
+                 }
+             }
+         }
+     }
         
     }

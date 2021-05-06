@@ -28,19 +28,23 @@
             <ul class="navbar-nav ml-auto">
                 <li class="nav-item"><a class="nav-link" href="/Default.aspx">Home</a></li>
                 <li class="nav-item"><a class="nav-link" href="/Instructors.aspx">Instructors</a></li>
+                <li class="nav-item"><a class="nav-link" href="/classes.aspx">Classes</a></li>
                 <asp:LoginView ID="LoginView2" runat="server">
-                    <AnonymousTemplate>
-                        <li class="nav-item"><a class="nav-link" href="/classes.aspx">Classes</a></li>
-                    </AnonymousTemplate>
                     <LoggedInTemplate>
                         <li class="nav-item"><a class="nav-link" href="/User/BookClasses.aspx">Book Classes</a></li>
                     </LoggedInTemplate>
                     <RoleGroups>
-                        <asp:RoleGroup Roles="admin, Instructor">
+                        <asp:RoleGroup Roles="Instructor">
                             <ContentTemplate>
-                                <li class="nav-item"><a class="nav-link" href="/classes.aspx">Classes</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/User/BookClasses.aspx">Book Classes</a></li>
                                 <li class="nav-item"><a class="nav-link" href="/Instructor/ManageClasses.aspx">Manage Classes</a></li>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                        <asp:RoleGroup Roles="admin">
+                            <ContentTemplate>
+                                <li class="nav-item"><a class="nav-link" href="/User/BookClasses.aspx">Book Classes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/Instructor/ManageClasses.aspx">Manage Classes</a></li>
+                                <li class="nav-item"><a class="nav-link" href="/admin/AdminMenu.aspx">Admin Menu</a></li>
                             </ContentTemplate>
                         </asp:RoleGroup>
                     </RoleGroups>

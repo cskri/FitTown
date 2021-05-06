@@ -1,6 +1,9 @@
 ﻿<%@ Page Title="" Language="C#" MasterPageFile="~/MasterPage.master" AutoEventWireup="true" CodeFile="ManageClasses.aspx.cs" Inherits="Instructor_ManageClasses" %>
 
+
 <asp:Content ID="Content1" ContentPlaceHolderID="head" Runat="Server">
+
+
 <script src="/Scripts/jquery-1.4.1.min.js" type="text/javascript"></script>
 <script src="/Scripts/jquery.dynDateTime.min.js" type="text/javascript"></script>
 <script src="/Scripts/calendar-en.min.js" type="text/javascript"></script>
@@ -25,7 +28,8 @@
        <svg class="bd-placeholder-img" width="100%" height="400px" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="xMidYMid slice" focusable="false" role="img"><rect width="100%" height="400px" fill="#000" fill-opacity="0.4"></rect></svg>
        <div class="container">
           <div class="carousel-caption text-left">
-             <h5>Hey there Instructor!</h5>
+             <h5>Hey there <asp:Label ID="Label1" runat="server" Text="Label"></asp:Label>!</h5>
+              
              <p>Create some classes for our customers!</p>
            </div>
        </div>
@@ -42,7 +46,7 @@
                             <asp:TextBox ID="ClassName" runat="server"></asp:TextBox>
                         </li>
                         <li><b>Date & Time:</b>
-                           <asp:TextBox ID="TextBox1" runat="server" ReadOnly = "true"></asp:TextBox>
+                           <asp:TextBox ID="TextBox1" runat="server"></asp:TextBox>
                             <img src="calender.png" />
                             
                         </li>
@@ -75,12 +79,70 @@
 
         <div class="card mb-2 shadow-sm d-flex justify-content-center">
                 <div class="card-header d-flex justify-content-center">
-                    <h4 class="my-0 font-weight-normal">Classes that you are teaching</h4>
+                    <asp:LoginView ID="LoginView2" runat="server">
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Instructor">
+                            <ContentTemplate>
+                               <h4 class="my-0 font-weight-normal">Classes that you are teaching</h4>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                        <asp:RoleGroup Roles="admin">
+                            <ContentTemplate>
+                                <h4 class="my-0 font-weight-normal">Manage all classes</h4>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
                 </div>
                 <div class="card-body d-flex justify-content-center">
-                    
+                    <asp:GridView ID="GridView1" runat="server" AutoGenerateColumns="false" AllowPaging="true"
+                        OnPageIndexChanging="OnPaging" PageSize="10">
+                        <Columns>
+                            <asp:BoundField ItemStyle-Width="150px" DataField="Id" HeaderText="Class ID" />
+                            <asp:BoundField ItemStyle-Width="150px" DataField="Name" HeaderText="Class Name" />
+                            <asp:BoundField ItemStyle-Width="150px" DataField="Room" HeaderText="Room" />
+                            <asp:BoundField ItemStyle-Width="150px" DataField="Date" HeaderText="Date" />
+                            <asp:BoundField ItemStyle-Width="150px" DataField="MaxParticipants" HeaderText="Maximum Participants" />
+                            <asp:BoundField ItemStyle-Width="150px" DataField="Instructor" HeaderText="Assigned Instructor" />
+                        </Columns>
+                    </asp:GridView>
                 </div>
                 <div class="card-footer d-flex justify-content-center">
+                    <asp:LoginView ID="LoginView1" runat="server">
+                    <RoleGroups>
+                        <asp:RoleGroup Roles="Instructor">
+                            <ContentTemplate>
+                               Delete a class from Class ID: <nbrsp /><asp:DropDownList ID="deleteClassList" runat="server" Width="120px"
+                                DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
+                            </asp:DropDownList>
+
+                            <!-- SQL statement that retrieves all rooms from the database -->
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server"
+                                ConnectionString="<%$ ConnectionStrings:ConnectionString %>"
+                                SelectCommand="SELECT [Id] FROM [Classes] WHERE ([Instructor] = @Instructor)">
+                                <SelectParameters>
+                                    <asp:ControlParameter ControlID="Label1" Name="Instructor" PropertyName="Text" Type="String" />
+                                </SelectParameters>
+                            </asp:SqlDataSource>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+
+                        <asp:RoleGroup Roles="admin">
+                            <ContentTemplate>
+                              Delete a class from Class ID: <nbrsp /> <asp:DropDownList ID="deleteClassList" runat="server" Width="120px"
+                                DataSourceID="SqlDataSource2" DataTextField="Id" DataValueField="Id">
+                            </asp:DropDownList>
+
+                            <!-- SQL statement that retrieves all rooms from the database -->
+                            <asp:SqlDataSource ID="SqlDataSource2" runat="server"
+                                ConnectionString="<%$ ConnectionStrings:LocalSqlServer %>"
+                                SelectCommand="SELECT [Id] FROM [Classes]">
+                            </asp:SqlDataSource>
+                            </ContentTemplate>
+                        </asp:RoleGroup>
+                    </RoleGroups>
+                </asp:LoginView>
+                    <asp:Button ID="DeleteButton" runat="server" Text="Delete Class" OnClick="DeleteButton_Click" />
                 </div>
             </div>
     </div>

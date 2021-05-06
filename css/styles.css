@@ -41,7 +41,7 @@ footer{
 }
 
 .container {
-  padding: 0 16px;
+    padding: 0 16px;
 }
 
 .container::after, .row::after {
@@ -95,11 +95,6 @@ footer{
     padding: 5px;  
 }
 
-
-.wrapper {
-margin:60px;
+.containerFrontpage {
+margin-bottom: 50px;
 }
-
-
-
-

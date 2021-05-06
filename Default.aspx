@@ -56,10 +56,10 @@
         </div>
         </div> 
         <!-- END Carousel-->
-    
-    <div class="wrapper" >
+    <div class="containerFrontpage">
+    <div class="container" >
         <div class="row justify-content-md-center">
-            <div class="col col-md-4">
+            <div class="service col-sm-6 col-md-5">
   
     <div class="first">
       <h1>Lorem Ipsum</h1>
@@ -70,21 +70,23 @@
         laboris nisi ut aliquip ex ea commodo consequat.</p>
     </div>
                 </div>
-    <div class="col col-md-4">
+    <div class="service col-sm-6 col-md-5">
       <img id="altforflotte" src="/images/altforflotte.png" />
         </div>
             </div>
 </div>
+    </div>
+        
 
-    <div class="wrapper">
+    <div class="container">
         <div class="row justify-content-md-center"> 
-            <div class="col col-md-4">
+            <div class="service col-sm-6 col-md-5">
   
                
-     <img id="pumper" src="/images/pumper.jpg"/>
+     <img id="pumper" src="/images/merepumper.jpg"/>
                   
                 </div>
-                <div class="col col-md-4">
+                <div class="service col-sm-6 col-md-5">
     <div class="pumpertext">
       <h1>Lorem Ipsum</h1>
       <h5 class="w3-padding-32">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</h5>

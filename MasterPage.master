@@ -1,4 +1,6 @@
 ﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+<%: System.Web.HttpRuntime.UsingIntegratedPipeline %>
+<%: System.Web.HttpRuntime.IISVersion %>
 
 <!DOCTYPE html>
 

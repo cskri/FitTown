@@ -65,7 +65,7 @@ public partial class BookClasses : System.Web.UI.Page
         sqlCmd.ExecuteNonQuery();
         con.Close();
         //Reload Page
-        Server.TransferRequest(Request.Url.AbsolutePath, false);
+        Page.Response.Redirect(Page.Request.Url.ToString(), false);
     }
 
     protected void BookingButton_Click(object sender, EventArgs e)
@@ -119,7 +119,7 @@ public partial class BookClasses : System.Web.UI.Page
 
                 resultLabel.Text = "You signed up!!";
                 //Reload Page
-                Server.TransferRequest(Request.Url.AbsolutePath, false);
+                Page.Response.Redirect(Page.Request.Url.ToString(), false);
             }
         }
         else if (amtOfSignups >=1)
@@ -144,7 +144,7 @@ public partial class BookClasses : System.Web.UI.Page
 
             resultLabel.Text = "You signed up!!";
             //Reload Page
-            Server.TransferRequest(Request.Url.AbsolutePath, false);
+            Page.Response.Redirect(Page.Request.Url.ToString(), false);
         }
         
     }

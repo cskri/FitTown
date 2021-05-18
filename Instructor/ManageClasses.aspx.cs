@@ -48,7 +48,7 @@ public partial class Instructor_ManageClasses : System.Web.UI.Page
         con.Close();
 
         //Reload Page
-        Server.TransferRequest(Request.Url.AbsolutePath, false);
+        Page.Response.Redirect(Page.Request.Url.ToString(), false);
 
     }
      protected void ConfirmButton_Click(object sender, EventArgs e)
@@ -89,7 +89,7 @@ public partial class Instructor_ManageClasses : System.Web.UI.Page
             resultLabel.ForeColor = System.Drawing.Color.Black;
             resultLabel.Text = "Class Created";
          //Reload Page
-            Server.TransferRequest(Request.Url.AbsolutePath, false);
+            Page.Response.Redirect(Page.Request.Url.ToString(), false);
         }
      protected void OnPaging(object sender, GridViewPageEventArgs e)
      {
